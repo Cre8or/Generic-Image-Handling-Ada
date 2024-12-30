@@ -1,0 +1,29 @@
+*.stderr
+*.stdout
+*.lexch
+*.bexch
+*.ali
+*.cswi
+*.a
+*.o
+*.d
+*.db
+*.db-shm
+*.db-wal
+*.cgpr
+*.exe
+*.log
+*.rpt
+*.directory
+*.clang-format
+
+obj/*
+lib/*
+
+# Alire
+alire/*
+config/*
+
+# Test project
+example_project/obj/*
+example_project/output/*

@@ -1,0 +1,36 @@
+with "../cre8or_generic_image_handling.gpr";
+
+
+
+
+
+project Cre8or_Generic_Image_Handling_Example is
+
+
+
+   for Create_Missing_Dirs use "True";
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Main use ("main_generic_image_handling.adb");
+
+
+
+   package Binder is
+      for Switches ("ada") use ("-Es", "-E");
+   end Binder;
+
+   package Builder is
+      for Switches ("ada") use ("-s", "-g");
+   end Builder;
+
+   package Compiler is
+      for Switches ("ada") use ("-g", "-gnatp");
+   end Compiler;
+
+   package Linker is
+      for Switches ("ada") use ("-g", "-lm");
+   end Linker;
+
+
+
+end Cre8or_Generic_Image_Handling_Example;
